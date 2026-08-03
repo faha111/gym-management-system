@@ -1,0 +1,25 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded badge backdrop -->
+  <rect x="3" y="3" width="114" height="114" rx="28" fill="url(#pulseGrad)" fill-opacity="0.12" stroke="url(#pulseGrad)" stroke-width="2.5"/>
+
+  <!-- Heartbeat / pulse line flowing into a dumbbell -->
+  <path d="M14 62 L32 62 L40 44 L50 80 L60 30 L68 62 L78 62"
+        fill="none" stroke="url(#pulseGrad)" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Dumbbell, continuing the pulse line -->
+  <g stroke="url(#pulseGrad)" stroke-width="6" stroke-linecap="round">
+    <line x1="78" y1="62" x2="100" y2="62"/>
+  </g>
+  <g fill="url(#pulseGrad)">
+    <rect x="94" y="52" width="7" height="20" rx="3.5"/>
+    <rect x="101" y="47" width="6" height="30" rx="3"/>
+  </g>
+</svg>
