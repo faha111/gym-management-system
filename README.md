@@ -86,41 +86,9 @@ gym_management/
 ---
 
 ## 🚀 Beginner's Step-by-Step Guide for Localhost (XAMPP)
-
-Follow these easy baby steps to run this project on your computer:
-
-> ⚠️ **Important:** After extracting the ZIP, the folder you copy into `htdocs` **must
-> contain `index.php`, `config/`, `classes/`, etc. directly inside it** — not nested
-> one level deeper (e.g. avoid `htdocs\gym_management\gym_management\index.php`).
-> If your ZIP tool extracted an extra outer folder, move the inner folder up one level
-> before copying it into `htdocs`.
-
-### Step 1: Copy Project Files to XAMPP `htdocs`
-1. Open XAMPP directory on your PC (Usually located at `C:\xampp`).
-2. Open the `htdocs` folder (`C:\xampp\htdocs`).
-3. Copy the entire project folder into `C:\xampp\htdocs\gym_management` (you can rename
-   this folder to anything you like — e.g. `pulsefit`, `CST226_Project` — the app works
-   correctly under any folder name, see the `BASE_URL` note above).
-
-### Step 2: Start Apache and MySQL in XAMPP
-1. Open **XAMPP Control Panel** on Windows.
-2. Click **Start** next to **Apache**.
-3. Click **Start** next to **MySQL**.
-*(Both modules should turn green).*
-
-### Step 3: Create Database & Import Schema (`database.sql`)
-1. Open your web browser and go to: `http://localhost/phpmyadmin`
-2. Click on **Databases** at the top menu.
-3. Type database name: `gym_db` and click **Create**.
-4. Select `gym_db` from the left menu.
-5. Click on the **Import** tab at the top.
-6. Click **Choose File** and select `database.sql` from your `C:\xampp\htdocs\gym_management\database\database.sql`.
-7. Scroll down to the bottom and click **Import**.
-*(You will see a success message: "Import has been successfully finished")*.
-
-### Step 4: Open the Web Application
+ 
 1. Open your browser and navigate to the folder name you actually used in Step 1, e.g.:
-   👉 **`http://localhost/gym_management`** (replace `gym_management` with your folder
+   👉  **`http://localhost/gym_management/index.php`** (replace `gym_management` with your folder
    name if you renamed it).
 2. You will see the **PulseFit Gym Management System** landing page.
 3. To log in as Admin, go to `http://localhost/gym_management/auth/login.php` and use
